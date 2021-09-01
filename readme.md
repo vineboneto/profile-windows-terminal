@@ -1,0 +1,1 @@
+### Minhas configurações pessoais do Windows Terminal
