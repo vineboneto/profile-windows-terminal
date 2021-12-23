@@ -2,8 +2,6 @@
 
 Esse arquivo contém as configurações que utilizo no windows terminal e aqui em baixo descrevo como instalar o power line no windows terminal 
 
-`Vai se foder Microsoft, pois sua documentação está desatualizada e isso me custou horas.`
-
 > ### Instalação
   
   - Execute no powershell os seguintes comandos para instalar as dependências
