@@ -13,7 +13,7 @@ Esse arquivo contém as configurações que utilizo no windows terminal e aqui e
   ```
   - Em seguida abra o seu perfil do windows terminal com:
   ```shell
-    $ code PROFILE
+    $ code $PROFILE
   ```
   - Neste arquivo cole as seguintes configurações
   ```
