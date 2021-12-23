@@ -1,13 +1,7 @@
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    // Add custom actions and keybindings to this array.
-    // To unbind a key combination from your defaults.json, set the command to "unbound".
-    // To learn more about actions and keybindings, visit https://aka.ms/terminal-keybindings
     "actions": 
     [
-        // Copy and paste are bound to Ctrl+Shift+C and Ctrl+Shift+V in your defaults.json.
-        // These two lines additionally bind them to Ctrl+C and Ctrl+V.
-        // To learn more about selection, visit https://aka.ms/terminal-selection
         {
             "command": 
             {
@@ -20,15 +14,17 @@
             "command": "paste",
             "keys": "ctrl+v"
         },
-        // Press Ctrl+Shift+F to open the search box
+        {
+            "command": 
+            {
+                "action": "newTab"
+            },
+            "keys": "ctrl+t"
+        },
         {
             "command": "find",
             "keys": "ctrl+shift+f"
         },
-        // Press Alt+Shift+D to open a new pane.
-        // - "split": "auto" makes this pane open in the direction that provides the most surface area.
-        // - "splitMode": "duplicate" makes the new pane use the focused pane's profile.
-        // To learn more about panes, visit https://aka.ms/terminal-panes
         {
             "command": 
             {
@@ -38,19 +34,8 @@
             },
             "keys": "alt+shift+d"
         },
-        //My Actions
         {
-            "command": 
-            {
-                "action": "newTab"
-            },
-            "keys": "ctrl+t"
-        },
-        {
-            "command": 
-            {
-                "action": "closePane"
-            },
+            "command": "closePane",
             "keys": "ctrl+w"
         }
     ],
@@ -62,11 +47,10 @@
     {
         "defaults": 
         {
-            // "backgroundImageOpacity": 0.20000000000000001,
-            // "colorScheme": "Dracula",
-            "acrylicOpacity": 0.7,
-            "fontFace": "FiraCode Nerd Font",
-            "useAcrylic": true
+            "font": 
+            {
+                "face": "FiraCode Nerd Font"
+            }
         },
         "list": 
         [
@@ -74,7 +58,7 @@
                 "commandline": "powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
-                "name": "Windows PowerShell",
+                "name": "Windows PowerShell"
             },
             {
                 "commandline": "cmd.exe",
@@ -87,19 +71,13 @@
                 "hidden": false,
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
-            },
-            {
-                "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
-                "hidden": false,
-                "name": "Ubuntu-20.04",
-                "source": "Windows.Terminal.Wsl"
             }
         ]
     },
     "schemes": 
     [
         {
-            "background": "#0C0C0C",
+            "background": "#191622",
             "black": "#0C0C0C",
             "blue": "#0037DA",
             "brightBlack": "#767676",
